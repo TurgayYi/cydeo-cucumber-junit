@@ -1,48 +1,38 @@
-package com.cydeo.step_definitions;
+package cydeo.step_definitions;
 
-
+import com.cydeo.pages.WikiSearchPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Login_StepDefinitions {
+
+
+
     @When("user enters librarian username")
     public void user_enters_librarian_username() {
-
-        System.out.println("user enters librarian username");
-
+        System.out.println("User enters librarian username");
     }
-
     @When("user enters librarian password")
     public void user_enters_librarian_password() {
-
-        System.out.println("user enters librarian password");
-
+        System.out.println("User enters librarian password");
     }
-
     @Then("user should see the dashboard")
     public void user_should_see_the_dashboard() {
-
-        System.out.println("user should see the dashboard");
-
-
+        System.out.println("User should see the dashboard");
 
     }
-
 
     @When("user enters student username")
     public void userEntersStudentUsername() {
-
-        System.out.println("user enters student username");
-        
+        System.out.println("User enters student username");
     }
 
     @And("user enters student password")
     public void userEntersStudentPassword() {
-        System.out.println("user enters student password");
+        System.out.println("User enters student password");
     }
-
 
     @When("user enters admin username")
     public void userEntersAdminUsername() {
@@ -54,9 +44,10 @@ public class Login_StepDefinitions {
         System.out.println("user enters admin password");
     }
 
-
     @Given("user is on the library login page")
     public void userIsOnTheLibraryLoginPage() {
-        System.out.println("User is on the library login page");
+        System.out.println("user is on the library login page");
     }
+
+
 }
