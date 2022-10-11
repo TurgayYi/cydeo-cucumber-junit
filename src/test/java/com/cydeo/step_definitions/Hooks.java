@@ -5,6 +5,7 @@ In this class we will be able to pass pre & post conditions to
 each scenario and each step
  */
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.Alert;
@@ -45,7 +46,7 @@ public class Hooks {
         }
 
 
-
+        BrowserUtils.sleep(5);
         Driver.closeDriver();
 
 

@@ -8,6 +8,7 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
 public class Order_StepDefinitions {
@@ -35,7 +36,13 @@ public class Order_StepDefinitions {
 
     }
     @When("user enters quantity {int}")
-    public void user_enters_quantity(Integer int1) {
+    public void user_enters_quantity(Integer arg) {
+
+        //clear() method will delete whatever is in the input box
+        //orderPage.inputQuantity.clear();
+        orderPage.inputQuantity.sendKeys(Keys.BACK_SPACE);
+        orderPage.inputQuantity.sendKeys(arg + "");
+       // orderPage.inputQuantity.sendKeys(String.valueOf(arg));
 
 
     }
