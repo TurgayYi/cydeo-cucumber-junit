@@ -21,13 +21,13 @@ public class Hooks {
 
         System.out.println("===Setting up browser using cucumber @Before");
     }
-    @Before(value = "@login",order = 1)
+    //@Before(value = "@login",order = 1)
     public void setupScenarioForLogins(){
 
         System.out.println("===This will only apply to scenario with @login tag");
     }
 
-    @Before(value = "@db",order = -1)
+    //@Before(value = "@db",order = -1)
     public void setupForDatabaseScenarios(){
 
         System.out.println("===This will only apply to scenario with @db tag");
@@ -54,12 +54,12 @@ public class Hooks {
        // System.out.println("===Scenario ended /Take screenshot if failed");
     }
 
-   @BeforeStep
+  // @BeforeStep
    public void setupStep(){
        System.out.println("------------applying setup using @Beforestep");
    }
 
-   @AfterStep
+   //@AfterStep
     public void afterStep(){
        System.out.println("-------- applying tearDown using @AfterStep");
    }
