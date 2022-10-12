@@ -45,7 +45,7 @@ public class OrderPage {
     @FindBy(name = "cardExp")
     public WebElement cardExpInput;
 
-    @FindBy(css = "button.button")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement processOrderButton;
 
   
