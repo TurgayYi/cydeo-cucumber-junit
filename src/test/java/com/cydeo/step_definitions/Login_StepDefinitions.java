@@ -1,4 +1,4 @@
-package cydeo.step_definitions;
+package com.cydeo.step_definitions;
 
 import com.cydeo.pages.WikiSearchPage;
 import io.cucumber.java.en.And;
@@ -8,30 +8,37 @@ import io.cucumber.java.en.When;
 
 public class Login_StepDefinitions {
 
+    @Given("user is on the library login page")
+    public void user_is_on_the_library_login_page() {
+
+        System.out.println("user is on the library login page");
+
+    }
 
 
     @When("user enters librarian username")
-    public void user_enters_librarian_username() {
-        System.out.println("User enters librarian username");
+    public void userEntersLibrarianUsername() {
+        System.out.println("user enters librarian username");
     }
-    @When("user enters librarian password")
-    public void user_enters_librarian_password() {
-        System.out.println("User enters librarian password");
-    }
-    @Then("user should see the dashboard")
-    public void user_should_see_the_dashboard() {
-        System.out.println("User should see the dashboard");
 
+    @And("user enters librarian password")
+    public void userEntersLibrarianPassword() {
+        System.out.println("user enters librarian password");
+    }
+
+    @Then("user should see the dashboard")
+    public void userShouldSeeTheDashboard() {
+        System.out.println("user  sees the dashboard");
     }
 
     @When("user enters student username")
     public void userEntersStudentUsername() {
-        System.out.println("User enters student username");
+        System.out.println("user enters student username");
     }
 
     @And("user enters student password")
     public void userEntersStudentPassword() {
-        System.out.println("User enters student password");
+        System.out.println("user enters student password");
     }
 
     @When("user enters admin username")
@@ -43,11 +50,5 @@ public class Login_StepDefinitions {
     public void userEntersAdminPassword() {
         System.out.println("user enters admin password");
     }
-
-    @Given("user is on the library login page")
-    public void userIsOnTheLibraryLoginPage() {
-        System.out.println("user is on the library login page");
-    }
-
 
 }

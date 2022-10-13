@@ -1,4 +1,4 @@
-@Regression @login
+@Regression @smoke @login
 Feature: Library app login feature
   User Story:
   As a user, I should be able to login with correct credentials to different
@@ -26,5 +26,3 @@ Feature: Library app login feature
     When user enters admin username
     And user enters admin password
     Then user should see the dashboard
-
-#this is how we add comments in feature file

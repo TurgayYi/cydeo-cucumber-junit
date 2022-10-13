@@ -31,9 +31,10 @@ Feature: Wikipedia search functionality and verifications
       | Chuck Norris      | Chuck Norris      | Chuck Norris       |
       | Antony Hopkins    | Antony Hopkins    | Antony Hopkins     |
 
-     @scientists
-      Examples:
-      | Marie Curie       | Marie Curie       | Marie Curie        |
-      | Lady Gaga         | Lady Gaga         | Lady Gaga          |
-      | Kate Winslet      | Kate Winslet      | Kate Winslet       |
+    @scientists
+    Examples:
+      | searchValue  | expectedTitle | expectedMainHeader |
+      | Marie Curie  | Marie Curie   | Marie Curie        |
+      | Lady Gaga    | Lady Gaga     | Lady Gaga          |
+      | Kate Winslet | Kate Winslet  | Kate Winslet       |
 
