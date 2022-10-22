@@ -31,7 +31,7 @@ Feature: Wikipedia search functionality and verifications
       | Chuck Norris      | Chuck Norris      | Chuck Norris       |
       | Antony Hopkins    | Antony Hopkins    | Antony Hopkins     |
 
-    @scientists
+    @scientists @ali
     Examples:
       | searchValue  | expectedTitle | expectedMainHeader |
       | Marie Curie  | Marie Curie   | Marie Curie        |
